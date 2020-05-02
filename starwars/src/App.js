@@ -5,7 +5,7 @@ import CharacterWrapper from './components/characterwrapper/CharacterWrapper';
 const App = () => {
     return (
         <div className="App">
-            <img src='./images/rm-logo.png' alt='Rick and Morty' ></img>
+            <img src='https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg' alt='Rick and Morty' height="100px" width="auto" ></img>
             <h1 className="Header">Characters</h1>
             <div>
                 <CharacterWrapper/>
