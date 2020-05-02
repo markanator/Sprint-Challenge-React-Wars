@@ -1,0 +1,11 @@
+.char-container-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 30px;
+    max-width: 90%;
+    min-height: 40vh;
+}
+.NAV{
+    display: inline-flex;
+}
