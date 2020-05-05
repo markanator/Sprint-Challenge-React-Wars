@@ -10,6 +10,7 @@ const App = () => {
             <div>
                 <CharacterWrapper/>
             </div>
+            <p>By: Mark Ambrocio 2020</p>
         </div>
     );
 }
