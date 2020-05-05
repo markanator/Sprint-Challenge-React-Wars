@@ -5,6 +5,8 @@ import {
     CardImg,
     CardText,
     CardBody,
+
+
     CardTitle,
     CardSubtitle
 } from 'reactstrap';
@@ -20,7 +22,11 @@ const Character = (props) => {
 
             <Card>
                 <CardImg top width="1%" src={props.url} alt="Card image cap"/>
+
+
                 <CardBody>
+
+                    
                     <CardTitle>{props.name}</CardTitle>
                     <CardSubtitle>Origin: {props.originL}</CardSubtitle>
                     <CardText>Status: {props.status}</CardText>

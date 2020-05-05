@@ -28,7 +28,9 @@ export default function CharacterWrapper() {
     }, []);
 
     const indexofLastchar = currentPage * charPerPage;
+
     const indexOfFirstChar = indexofLastchar - charPerPage;
+
     const currentChar = charArray.slice(indexOfFirstChar, indexofLastchar);
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -36,22 +38,25 @@ export default function CharacterWrapper() {
     return (
         <div>
             <div className="char-container-wrapper">
-            {currentChar.map((char) => {
-                return (<Character
-                    key={char.id}
-                    loading={loading}
-                    name={char.name}
-                    status={char.status}
-                    url={char.image}
-                    originL={char.origin.name}/>);
-            })}
+
+                {currentChar.map((char) => {
+
+                    return (<Character
+                        key={char.id}
+                        loading={loading}
+                        name={char.name}
+                        status={char.status}
+                        url={char.image}
+                        originL={char.origin.name}/>);
+                })}
             </div>
-            
+
             <div className="NAV">
                 <Paginationy
                     CharPerPage={charPerPage}
                     totalChars={charArray.length}
                     paginate={paginate}/>
+
             </div>
         </div>
     );
